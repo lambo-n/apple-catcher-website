@@ -7,12 +7,9 @@ function App() {
         <h1>The Apple Catcher Game</h1>
       </header>
       <main className="game-container">
-        <iframe
-          className="game-frame"
-          src={`${import.meta.env.BASE_URL}game/index.html`}
-          title="Apple Catcher Game"
-          allow="autoplay; fullscreen; gamepad"
-        />
+        <a className="play-link" href={`${import.meta.env.BASE_URL}game/game.html`}>
+          Play the Game
+        </a>
       </main>
     </>
   )
